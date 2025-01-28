@@ -1,0 +1,10 @@
+ php artisan make:model Post -mcr
+ php artisan make:model Comment -mcr
+ php artisan make:model Video -mcr
+
+ -- Insert fake values into the 'videos' table
+INSERT INTO videos (id, title, url, created_at, updated_at) VALUES
+(1, 'Intro to one', 'videos/first.mp4', '2025-01-01 10:00:00', '2025-01-01 10:00:00'),
+(2, 'Advanced PHP two', 'videos/second.mp4', '2025-01-02 11:00:00', '2025-01-02 11:00:00'),
+(3, 'Database Design three', 'videos/third.mp4', '2025-01-03 12:00:00', '2025-01-03 12:00:00');
+
